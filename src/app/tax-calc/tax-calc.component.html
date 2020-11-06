@@ -1,0 +1,37 @@
+<p>tax-calc demo</p>
+
+<div>
+    <label>Income:
+      <input #box1 
+      (keyup)="update1(box1.value)"
+      (blur)="update1(box1.value)"
+      [(ngModel)]="taxObj.income" placeholder="income" />
+    </label>
+</div>
+
+<div>
+    <label>Tax Rate:
+        <input
+        input #box2 
+        (keyup)="update2(box2.value)"
+        (blur)="update2(box2.value)" 
+        [(ngModel)]="taxObj.taxRate" placeholder="tax rate"/>
+    </label>
+
+</div>
+
+<div>
+    <label>tax: {{taxObj.tax}}
+    </label>
+</div>
+
+<div>
+    <button (click)="doCalc()">Calc!</button>
+</div>
+
+
+
+
+
+
+
