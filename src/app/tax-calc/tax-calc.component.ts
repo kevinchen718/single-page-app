@@ -13,7 +13,7 @@ export class TaxCalcComponent implements OnInit {
   //taxRate: number
   //tax: number
   taxObj: Tax = {
-    income : 1000,
+    income : 10000,
     taxRate: 0.15,
     tax: 10
 
